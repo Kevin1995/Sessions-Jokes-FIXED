@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(action='/', method='post' name="formTest")
+      | Username:
+      br
+      input(type='text', name='username')
+      br
+      | Password:
+      br
+      input(type='Password', name='password', value='')
+      br
+      input(type='submit', value='Login')
